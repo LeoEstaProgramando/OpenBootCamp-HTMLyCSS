@@ -1,0 +1,73 @@
+* {
+    background-color: lightblue;
+    padding: 0%;
+    margin: 0%;
+}
+
+h1 {
+    display: block;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-style: oblique;
+    background-color: lightgreen;
+    border: 50px;
+    border-color: black;
+    border-width: 10px;
+    border-style: double;
+    margin: 20px;
+    padding: 20px;
+}
+
+img[src] {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border-style: groove;
+    width: 280px;
+}
+
+#warning {
+    display: block;
+    color: white;
+    background-color: red;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.selectores, .otros {
+    color: white;
+    margin: 2px;
+    padding: 5px;
+    background-color: gray;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    font-weight: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px red;
+    font-family:'Times New Roman', Times, serif;
+}
+
+p {
+    display: block;
+    margin: 5px;
+    padding: 2px;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.autor, .fecha, .ubicacion {
+    background-color: black;
+    border-style: none;
+    font-size: 10px;
+}
