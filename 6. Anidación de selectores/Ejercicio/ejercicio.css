@@ -7,6 +7,6 @@ button:hover{
     color: white;
 }
 
-button::before{
+button:hover::before{
     content: 'Hecho!';
 }
