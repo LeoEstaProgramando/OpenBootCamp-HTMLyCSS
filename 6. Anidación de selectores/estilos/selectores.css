@@ -1,0 +1,62 @@
+/*Anidación de selectores*/
+body section.main div.contenedor p {
+    color: green;
+}
+
+.contenedor #boton {
+    background-color: yellow;
+    width: 200px;
+    height: 100px;
+}
+/*Pesudoclases*/
+#boton:hover {
+    background-color: green;
+}
+
+.contenedor p:first-child {
+    color: red;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: chocolate;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: purple;
+}
+
+/*Pesudoelementos*/
+span.frase {
+    font-style: italic;
+}
+
+span.frase::before {
+    content: '<<';
+    font-size: xx-small;
+}
+
+span.frase::after {
+    content: '>>';
+    font-size: xx-small;
+}
+
+div.contenedor p::first-letter{
+    font-size: xx-large;
+}
+
+div.contenedor p::first-line{
+    color: red;
+}
+
+p::selection{
+    background-color: blue;
+    color: white;
+}
