@@ -1,0 +1,30 @@
+.flex {
+    display: flex; /*acomoda los bloques como si fueran flexible*/
+    flex-direction: column; /*cambia la dirección del display flex*/
+    background-color: yellow;
+    height: 200px;
+    justify-content: space-around; /*posiciona los bloques en función del contenido del padre*/
+    flex-wrap: nowrap; /*por defecto nowrap, el wrap hace que no se cambien las dimensiones del bloque*/
+    align-items: center; /*centra los bloques en función del contenido*/
+}
+
+.contenido-1 {
+    background-color: white;
+    width: 200px;
+    border: 1px;
+    border-style: solid;
+}
+
+.contenido-2 {
+    background-color: white;
+    width: 200px;
+    border: 1px;
+    border-style: solid;
+}
+
+.contenido-3 {
+    background-color: white;
+    width: 200px;
+    border: 1px;
+    border-style: solid;
+}
