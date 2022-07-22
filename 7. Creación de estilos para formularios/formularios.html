@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login User</title>
+    <link rel="stylesheet" href="formularios.css">
+</head>
+<body>
+    <div class="container">
+        <div class="encabezado">
+            <h3>Formularios.com</h3>
+        </div>
+        <div class="botones">
+            <button class="boton-google">
+                <picture>
+                    <img src="http://assets.stickpng.com/images/5a951939c4ffc33e8c148af2.png" alt="Logo Google">
+                </picture>
+                <span>Acceder con Google</span>            
+            </button>
+            <button class="boton-twitter">
+                <picture>
+                    <img src="https://cdn-icons-png.flaticon.com/512/39/39552.png" alt="Logo Twitter">
+                </picture>
+            </button>
+        </div>
+        <div class="separador">
+            <hr>
+            <span>Or</span>
+            <hr>
+        </div>
+        <div class="formulario">
+            <form action="" method="">
+                <div class="nombres">
+                    <label class="label" for="name">
+                        <span>Name</span>
+                        <input class="input" id="name" type="text" name="name">    
+                    </label>
+                    <label class="label" for="username">
+                        <span>Username</span>
+                        <input class="input" id="username" type="text" name="username">    
+                    </label>
+                </div>
+                <label class="label" for="email">
+                    <span>Email</span>
+                    <input class="input" type="email" name="email" id="email">
+                </label>
+                <label class="label" for="password">
+                    <span>Password</span>
+                    <input class="input" type="password" name="password" id="password" placeholder="6+ caracteres">
+                </label>
+                <label for="checkbox" class="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <span>Acepto los términos y condiciones</span>
+                </label>
+                <button type="submit" class="create"> Create Account</button>
+                <span>Already a member? <a href="http://google.com">Sign in</a></span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
