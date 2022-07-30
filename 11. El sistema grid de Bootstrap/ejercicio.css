@@ -1,26 +1,5 @@
 .row div {
     margin: 5px;
-}
-.col {
+    color: white;
     background-color: red;
-}
-
-.col-sm {
-    background-color: yellow;
-}
-
-.col-md {
-    background-color: green;
-}
-
-.col-lg {
-    background-color: blue;
-}
-
-.col-xl {
-    background-color: orange;
-}
-
-.col-xxl {
-    background-color: violet;
 }
