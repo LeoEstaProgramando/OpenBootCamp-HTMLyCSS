@@ -1,0 +1,64 @@
+:root {
+    --color-principal: rgb(0, 187, 255);
+    --ancho-principal: 250px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    font-style: oblique;
+}
+
+.contenedor {
+    background-color: var(--ancho-principal);
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.pixeles {
+    background-color: green;
+    width: 200px; /*Ocupa solo 200 pixeles, es unidad fija.*/
+}
+
+.porcentaje {
+    background-color: yellow;
+    width: 50%; /*Ocupa el 50% de su contenedor (no incluye padding, margin, ni border)*/
+}
+
+.viewport {
+    background-color: blue;
+    width: 50vw; /*Ocupa el 50% de la vista pantalla (incluye padding, margin y border)*/
+}
+
+.em {
+    font-size: 2em; /*El tamaño de letra está en función de su contenedor, 2em duplica el tamaño.*/
+}
+
+.rem {
+    font-size: 2rem; /*El tamaño de letra está en función de su raíz, */
+}
+
+@media all and (min-width: 576px) {
+    h1 {
+        color:yellow;
+    }
+}
+
+/* Funciona como condicional "or"*/
+@media all and (min-width: 995px), (min-height: 1100px) {
+    h1 {
+        color: green;
+    }
+}
+
+/* Funciona como condicional "and"*/
+@media (orientation: landscape) and (min-height: 400px) {
+    p {
+        color: brown;
+    }
+}

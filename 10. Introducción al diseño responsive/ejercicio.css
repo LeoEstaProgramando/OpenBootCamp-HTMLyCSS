@@ -1,0 +1,49 @@
+.contenedor {
+    display: flex;
+    background-color: beige;
+}
+
+.lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border: 5px double red;
+}
+
+.principal {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    margin: 5px;
+    border: 5px double red;
+}
+
+.elemento-lateral {
+    background-color: beige;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    width: 80px;
+}
+
+@media (max-width: 640px) {
+    .contenedor {
+        display: flex;
+        background-color: beige;
+        flex-direction: column-reverse;
+    }
+
+    .lateral {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        border: 5px double red;
+    }
+}
