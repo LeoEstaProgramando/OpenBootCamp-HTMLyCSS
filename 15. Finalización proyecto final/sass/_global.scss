@@ -1,0 +1,199 @@
+@use "components";
+
+@mixin section-display {
+    width: 100%;
+    padding: 2rem;
+    max-width: 992px;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+    border-bottom: solid 1px #ddd;
+}
+
+.logo a img {
+    max-width: 7rem;
+}
+
+.sec-home {
+    display: flex;
+    flex-direction: row;
+    @include section-display();
+    align-items: center;
+    justify-content: center;
+
+    .home-cta {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .cta-text {
+            color: components.$color-main;
+        }
+
+        .home-tittle {
+            width: 20rem;
+            font-size: 3rem;
+        }
+
+        .home-description {
+            max-width: 20rem;
+        }
+
+        .lead-magnet {
+            max-width: 20rem;
+            display: flex;
+            gap: 1rem;
+        }
+    .home-img img {
+        max-height: 450px;
+    }
+}
+
+.sec-features {
+    @include section-display();
+
+    .intro {
+        text-align: center;
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: #888;
+        }
+    }
+
+    .features {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        .contenido {
+            padding: 2rem 0;
+            flex: 1;
+            .feature-contenido {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .description {
+                    margin-left: 1rem;
+                    max-width: 20rem;
+
+                    .description-tittle {
+                        font-size: 1.5rem;
+                    }
+                    .description-text {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .features-image {
+            img {
+                max-width: 30rem;
+            }
+        }
+    }
+}
+
+.sec-benefits {
+    @extend .sec-features, .intro;
+    border-top: 1px solid #ccc;
+    .benefit-cards {
+        width: 100%;
+        padding: 0 2rem 2rem 2rem;
+    }
+}
+
+.sec-kpis{
+    background-color: components.$color-main;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    margin-left: 0;
+    .kpi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        .number {
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        .kpi-description {
+            font-size: 0.9rem;
+            color: #ffffffaa;
+        }
+    }
+
+}
+
+.sec-onboarding {
+    @extend .sec-benefits, .intro;
+    .pasos {
+        padding: 0 7rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .separator {
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+    }
+}
+
+.sec-footer-cta {
+    background-color: components.$color-footer;
+    padding: 5rem;
+    background-image: url("../assets/images/earn.webp");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 40rem;
+    .footer-cta {
+        width: 50%;
+        .cta-tittle {
+            font-size: 2rem;
+        }
+        .cta-description {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sec-onboarding {
+        .pasos {
+            flex-direction: column;
+        }
+    }
+    .sec-footer-cta {
+        background-image: none;
+        .footer-cta {
+            text-align: center;
+            width: 100%;
+        }
+    }
+}

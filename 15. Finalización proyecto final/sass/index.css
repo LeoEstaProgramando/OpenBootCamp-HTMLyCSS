@@ -1,0 +1,251 @@
+.btn-main, .btn-main-s {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #0075FF;
+  color: white;
+  border: solid 1px #0075FF;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: white;
+  color: #0075FF;
+}
+.btn-main-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.btn-sec, .btn-sec-s {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  color: #888;
+}
+.btn-sec-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.main-menu {
+  margin: 0;
+  padding: 1rem;
+}
+.main-menu li {
+  list-style: none;
+  display: inline;
+  font-size: 1rem;
+  margin: 0 0.65rem;
+}
+.main-menu li a {
+  color: black;
+  text-decoration: none;
+}
+.main-menu li:hover {
+  text-decoration: underline;
+}
+
+.icon-s i {
+  color: #0075FF;
+  padding: 0.4rem 0.65rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+  font-size: 1.25rem;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.benefit .icon {
+  color: #0075FF;
+  font-size: 7.5rem;
+}
+.benefit .description .tittle {
+  font-size: 2rem;
+}
+.benefit .description .text {
+  color: #888;
+  font-weight: 600;
+}
+.benefit .cta {
+  color: #0075FF;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-desc .icon {
+  font-size: 10rem;
+  color: #0075FF;
+  padding: 0;
+}
+.icon-desc .tittle {
+  margin-top: -1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: solid 1px #ddd;
+}
+
+.logo a img {
+  max-width: 7rem;
+}
+
+.sec-home {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 2rem;
+  max-width: 992px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.sec-home .home-cta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.sec-home .cta-text {
+  color: #0075FF;
+}
+.sec-home .home-tittle {
+  width: 20rem;
+  font-size: 3rem;
+}
+.sec-home .lead-magnet {
+  display: flex;
+  gap: 1rem;
+}
+.sec-home .home-img img {
+  max-height: 450px;
+}
+
+.sec-features, .sec-benefits, .sec-onboarding {
+  width: 100%;
+  padding: 2rem;
+  max-width: 992px;
+  margin: auto;
+}
+.sec-features .intro, .sec-features .sec-benefits, .sec-features .sec-onboarding, .sec-benefits .intro, .sec-onboarding .intro, .sec-benefits .sec-benefits, .sec-onboarding .sec-benefits, .sec-benefits .sec-onboarding, .sec-onboarding .sec-onboarding {
+  text-align: center;
+}
+.sec-features .intro h3, .sec-features .sec-benefits h3, .sec-features .sec-onboarding h3, .sec-benefits .intro h3, .sec-onboarding .intro h3, .sec-benefits .sec-benefits h3, .sec-onboarding .sec-benefits h3, .sec-benefits .sec-onboarding h3, .sec-onboarding .sec-onboarding h3 {
+  font-size: 1.8rem;
+}
+.sec-features .intro p, .sec-features .sec-benefits p, .sec-features .sec-onboarding p, .sec-benefits .intro p, .sec-onboarding .intro p, .sec-benefits .sec-benefits p, .sec-onboarding .sec-benefits p, .sec-benefits .sec-onboarding p, .sec-onboarding .sec-onboarding p {
+  font-size: 0.8rem;
+  color: #888;
+}
+.sec-features .features, .sec-benefits .features, .sec-onboarding .features {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.sec-features .features .contenido, .sec-benefits .features .contenido, .sec-onboarding .features .contenido {
+  padding: 2rem 0;
+  flex: 1;
+}
+.sec-features .features .contenido .feature-contenido, .sec-benefits .features .contenido .feature-contenido, .sec-onboarding .features .contenido .feature-contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sec-features .features .contenido .feature-contenido .description, .sec-benefits .features .contenido .feature-contenido .description, .sec-onboarding .features .contenido .feature-contenido .description {
+  margin-left: 1rem;
+  max-width: 20rem;
+}
+.sec-features .features .contenido .feature-contenido .description .description-tittle, .sec-benefits .features .contenido .feature-contenido .description .description-tittle, .sec-onboarding .features .contenido .feature-contenido .description .description-tittle {
+  font-size: 1.5rem;
+}
+.sec-features .features .contenido .feature-contenido .description .description-text, .sec-benefits .features .contenido .feature-contenido .description .description-text, .sec-onboarding .features .contenido .feature-contenido .description .description-text {
+  font-size: 1rem;
+}
+.sec-features .features .features-image img, .sec-benefits .features .features-image img, .sec-onboarding .features .features-image img {
+  max-width: 30rem;
+}
+
+.sec-benefits, .sec-onboarding {
+  border-top: 1px solid #ddd;
+}
+.sec-benefits .benefit-cards, .sec-onboarding .benefit-cards {
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.sec-kpis {
+  background-color: #0075FF;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+.sec-kpis .kpi .number {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.sec-kpis .kpi .kpi-description {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6666666667);
+}
+
+.sec-onboarding .steps {
+  padding: 0 7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.sec-onboarding .steps .separator {
+  flex: 1;
+  border-top: 2px solid #ddd;
+  margin: 0 1rem;
+}
+
+.sec-footer-cta {
+  background-color: #F4F8FE;
+  padding: 5rem;
+  background-image: url("../assets/images/earn.webp");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 40rem;
+}
+.sec-footer-cta .footer-cta {
+  width: 50%;
+}
+.sec-footer-cta .footer-cta .cta-tittle {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 1.1rem;
+}/*# sourceMappingURL=index.css.map */
